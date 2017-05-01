@@ -34,7 +34,7 @@ Once downloaded and unzipped (I choose "c:\hd-proj\spark210" on my laptop) you c
  
  6- Then delete the line "package org.apache.spark.examples" because you already created your own package com.scala-proj.
 
-![New Project](/images/img-1.jpg?raw=true "New Project")
+![New Project](/images/img-1.jpg?raw=true;fit=400%2C60&amp;ssl=1 "New Project")
 
 
 ## Set Libraries Paths & Generate Jar
@@ -44,11 +44,11 @@ Now you are ready to setup your libraries:
 
 2- Delete the "Scala Library Container [2.11.8] which is shown in the diagram below.
 
-![Setup Libraries Path](/images/img-2.jpg?raw=true "New Project")
+![Setup Libraries Path](/images/img-2.jpg?raw=true "Setup Libraries Path")
 
  3- Then you need to press the "Add External JARS" button to the right and go to where you downloaded and unzipped Apache Spark (in my case "c:\hd-proj\spark210\jars" and select all the jars in the directory and press "Apply"
  
-![Setup Spark Libraries Path](/images/img-3.jpg?raw=true "New Project")
+![Setup Spark Libraries Path](/images/img-3.jpg?raw=true "Setup Spark Libraries Path")
 
 Now everything is ready to build your project and generate the page-rank.jar:
 
