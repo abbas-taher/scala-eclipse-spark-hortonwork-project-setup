@@ -22,9 +22,11 @@ If you don’t have it already, you need to download [Apache Spark 2.1.0](http:/
 Once downloaded and unzipped (I choose "c:\hd-proj\spark210" on my laptop) you can find the sample Examples as follows:  c:\hd-proj\spark210\examples\src\main\scala\org\apache\spark\examples. You can also find the Apache Spark Jars pre-built under the directory: c:\hd-proj\spark210\jars. These jar files will be used in Eclipse to build our mini applications.
 
 ## Create a New Project in Eclipse IDE for Scala
+We are going to be using the sample SparkPageRank.scala example that comes with Apache Spark. Here are the steps to create your project.
+
  1- You need to open the IDE and create a new Project (see image below) which we shall name it "page-rank" by selecting: File -> New -> Scala Project -> Project name: page-rank then click Finish. See image below.
  
- 2- Then select the page-rank project and select: File -> New -> Package -> Name: com.scala-proj then click Finish.
+ 2- Then select the page-rank project and select: File -> New -> Package -> Name: com.scalaproj then click Finish.
  
  3- Then select the page-rank project and select: File -> New -> Scala Object -> Name: SparkPageRank then click Finish.
  
@@ -51,4 +53,6 @@ Now you are ready to setup your libraries:
 
 Now everything is ready to build your project and generate the page-rank.jar:
 
- 1- 
+ 1- You need to open select the project then by selecting: File -> Export you go to the JAR Export screen (see image below).
+ 
+ 2- Click on 
