@@ -42,6 +42,12 @@ Once downloaded and unzipped (I choose "c:\hd-proj\spark210" on my laptop) you c
 Now everything is ready to setup your libraries then compile & build your project and generate the page-rank.jar
  1-You need to select the page-rank Project and then go to main menu: Project-> Properties and you will get to the Properties Window for the page-rank.
 
+2- Delete the "Scala Library Container [2.11.8] which is shown in the diagram below.
+
 ![Setup Libraries Path](/images/img-2.jpg?raw=true "New Project")
 
-![Setup Libraries Path](/images/img-2.gif?raw=true "New Project")
+ 3- Then you need to press the "Add External JARS" button to the right and go to where you downloaded and unzipped Apache Spark (in my case "c:\hd-proj\spark210\jars" and select all the jars in the directory and press "Apply"
+ 
+![Setup Spark Libraries Path](/images/img-3.jpg?raw=true "New Project")
+
+Now everything is ready to build your project and generate the page-rank.jar
