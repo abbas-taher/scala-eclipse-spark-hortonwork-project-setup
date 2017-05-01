@@ -7,4 +7,4 @@ Lately, I have started building some of these sample mini applications in order 
 
 For Hadoop & Spark I downloaded the 64 bits Hortonworks Sandbox v2.5 running on VirtualBox. Installation of the sandbox was straight forward on my Windows 7 laptop running Dell E6540 with Intel i&4810 Quad CPU 2.8 GHz and 16 GB RAM. One thing to keep in mind is to configure the sandbox to run with 11.5 GB Memory and 3 processors. The remaining one CPU and 4.5 GB memory would be enough to run your IDE and browser if you are not running anything else. To conncet to the sandbox via SSH I am using Putty.
 
-!New Project (images/img-1.jpg?raw=true "New Project")
+![New Project] (images/img-1.jpg?raw=true "New Project")
