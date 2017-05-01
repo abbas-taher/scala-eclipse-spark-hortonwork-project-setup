@@ -34,7 +34,7 @@ Once downloaded and unzipped (I choose "c:\hd-proj\spark210" on my laptop) you c
  
  6- Then delete the line "package org.apache.spark.examples" because you already created your own package com.scala-proj.
 
-![New Project](/images/img-1.jpg?raw=true;fit=803%2C674&amp;ssl=1 "New Project")
+![New Project](/images/img-1.jpg?raw=true;fit=683%2C573&amp;ssl=1 "New Project")
 
 
 ## Set Libraries Paths & Generate Jar
