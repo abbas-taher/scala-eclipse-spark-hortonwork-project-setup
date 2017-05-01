@@ -23,13 +23,19 @@ Once downloaded and unzipped (I choose "c:\hd-proj\spark210" on my laptop) you c
 
 ## Create a New Project in Eclipse IDE for Scala
  1- You need to open the IDE and create a new Project (see image below) which we shall name it "page-rank" by selecting: File -> New -> Scala Project -> Project name: page-rank then click Finish. See image below.
+ 
  2- Then select the page-rank project and select: File -> New -> Package -> Name: com.scala-proj then click Finish.
+ 
  3- Then select the page-rank project and select: File -> New -> Scala Object -> Name: SparkPageRank then click Finish.
+ 
  4- Now delete the Object class that was created by the IDE.
+ 
  5- From the Examples directory copy and paste the whole content of SparkPageRank.scala code into your newly created Object.
+ 
  6- Then delete the line "package org.apache.spark.examples" because you already created your own package com.scala-proj.
 
 ![New Project](/images/img-1.jpg?raw=true "New Project")
+
 
 ## Set Libraries Paths & Generate Jar
 
@@ -38,3 +44,4 @@ Now everything is ready to setup your libraries then compile & build your projec
 
 ![Setup Libraries Path](/images/img-2.jpg?raw=true "New Project")
 
+![Setup Libraries Path](/images/img-2.gif?raw=true "New Project")
