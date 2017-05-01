@@ -36,8 +36,6 @@ Once downloaded and unzipped (I choose "c:\hd-proj\spark210" on my laptop) you c
 
 ![New Project](/images/img-1.jpg?raw=true "New Project")
 
-![New Project](/images/img-1.gif?raw=true "New Project")
-
 ## Set Libraries Paths & Generate Jar
 
 Now you are ready to setup your libraries:
