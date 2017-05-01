@@ -19,7 +19,7 @@ For Hadoop & Spark I downloaded the 64 bits [Hortonworks Sandbox v2.5](https://h
 
 If you don’t have it already, you need to download [Apache Spark 2.1.0](http://spark.apache.org/downloads.html) and select the right version that works with Hortonworks v2.5 Sandbox. Here is a direct link to the correct release: Spark v 2.1.0 Dec 28, 2016 Prebuilt for Hadoop v 2.7 and later: spark-2.1.0-bin-hadoop2.7.tgz
 
-Once downloaded and unzipped (I choose "c:\hd-proj\spark210" on my laptop) you can find the sample Examples as follows:  c:\hd-proj\spark210\examples\src\main\scala\org\apache\spark\examples. You can also find the Apache Spark Jars pre-built under the directory: c:\hd-proj\spark210\jars. These jar files will be used in Eclipse to build our mini applications.
+Once downloaded and unzipped (I choose "c:\hd-proj\spark210" on my laptop) you can find the <b>Spark Examples<\b> as follows:  c:\hd-proj\spark210\examples\src\main\scala\org\apache\spark\examples. You can also find the pre-built <b>Spark Jars<\b> under the directory: c:\hd-proj\spark210\jars. These jar files need to be included in the Libraries Path of our project in Eclipse and they will be used to build our mini applications.
 
 ## Create a New Project in Eclipse IDE for Scala
 We are going to be using the sample SparkPageRank.scala example that comes with Apache Spark. Here are the steps to create your project.
@@ -32,7 +32,7 @@ We are going to be using the sample SparkPageRank.scala example that comes with 
  
  4- Now delete the Object class that was created by the IDE.
  
- 5- From the Examples directory copy and paste the whole content of SparkPageRank.scala code into your newly created Object.
+ 5- From the Spark Examples directory copy and paste the whole content of SparkPageRank.scala code into your newly created Object.
  
  6- Then delete the line "package org.apache.spark.examples" because you already created your own package com.scala-proj.
 
