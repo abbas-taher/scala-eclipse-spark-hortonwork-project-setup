@@ -39,7 +39,7 @@ Once downloaded and unzipped (I choose "c:\hd-proj\spark210" on my laptop) you c
 
 ## Set Libraries Paths & Generate Jar
 
-Now everything is ready to setup your libraries then compile & build your project and generate the page-rank.jar
+Now you are ready to setup your libraries:
  1-You need to select the page-rank Project and then go to main menu: Project-> Properties and you will get to the Properties Window for the page-rank.
 
 2- Delete the "Scala Library Container [2.11.8] which is shown in the diagram below.
@@ -50,4 +50,6 @@ Now everything is ready to setup your libraries then compile & build your projec
  
 ![Setup Spark Libraries Path](/images/img-3.jpg?raw=true "New Project")
 
-Now everything is ready to build your project and generate the page-rank.jar
+Now everything is ready to build your project and generate the page-rank.jar:
+
+ 1- 
