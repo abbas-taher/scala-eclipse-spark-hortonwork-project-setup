@@ -33,7 +33,7 @@ We are going to be using the sample SparkPageRank.scala example that comes with 
  
  5- From the Spark Examples copy and paste the whole content of SparkPageRank.scala code into your newly created Object.
  
- 6- Delete the line "package org.apache.spark.examples" because you already created your own package com.scala-proj.
+ 6- Delete the line "package org.apache.spark.examples" because you already created your own package com.scalaproj.
 
 ![New Project](/images/img-1.jpg?raw=true "New Project")
 
@@ -53,7 +53,7 @@ Now you are ready to setup your libraries and compile/build your project:
  
 ![Setup Spark Libraries Path](/images/img-3.jpg?raw=true "Setup Spark Libraries Path")
 
-Once the project compiles you are ready to generate the page-rank.jar. Follow the steps below:
+Once the project compiles without errors you are ready to generate the page-rank.jar. Please follow the steps below:
 
  1- Select Project->Export from the main menu. When the Export window opens press Next >.
  
@@ -69,9 +69,9 @@ Once the project compiles you are ready to generate the page-rank.jar. Follow th
  
  ## Copy Jar & Input data files to sandbox
  
- 1- Open Ambari and select File View which will take you to the main HDFS directory.
+ 1- Login to Ambari (uisng raj_ops as user name and password) and then the small icon with squares to the right near the login name. When the drop down menu opens select Files View which will take you to the root HDFS directory.
  
- 2- Create two directories "jars" and "input" in the main directory.
+ 2- Create the two directories "jars" and "input" in the root hdfs directory.
  
  3- Upload the page-rank.jar file and the data file urldata.txt into hdfs via Ambari.
  
