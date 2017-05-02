@@ -73,7 +73,7 @@ Once the project compiles without errors you are ready to generate the page-rank
  
  2- Create the two directories "jars" and "input" in the root hdfs directory.
  
- 3- Upload the page-rank.jar file and the data file urldata.txt into hdfs via Ambari.
+ 3- Upload the page-rank.jar file and the data file [urldata.txt](/urldata.txt?raw=true "URL Graph Data") into hdfs via Ambari.
  
  4- Connect via Putty to your sandbox using IP address 127.0.0.1 port# 2222
  
