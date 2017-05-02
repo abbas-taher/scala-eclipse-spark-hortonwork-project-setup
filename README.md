@@ -1,5 +1,5 @@
-## Tutorial 101: How to setup &amp; run a Spark Example SparkPageRank.scala 
-## on Hortonwork 2.5 Sandbox and build project using Scala IDE for Eclipse
+## Tutorial 101: How to build &amp; run a Spark Example: SparkPageRank.scala 
+### Build project using Scala IDE for Eclipse and run on Hortonwork 2.5 Sandbox
 
 The [Apache Spark Examples](http://spark.apache.org/examples.html) give a quick overview of the Spark API. They are a hidden treasure for someone seeking to learn about Apache Spark and its various components. You can download the whole set of examples from [Spark’s Github Repository](https://github.com/apache/spark/tree/master/examples/src/main/scala/org/apache/spark/examples). We shall be using SparkPageRank.scala from the example set.
 
