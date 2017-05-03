@@ -1,7 +1,7 @@
 ## Tutorial 101: How to build &amp; run Spark example: SparkPageRank.scala 
 ### Building project using Scala IDE for Eclipse and running on Hortonworks 2.5 Sandbox
 
-The [Apache Spark Examples](http://spark.apache.org/examples.html) give a quick overview of the Spark API. They are a hidden treasure for someone seeking to learn about Apache Spark and its various components. You can download the whole set of examples from [Spark’s Github Repository](https://github.com/apache/spark/tree/master/examples/src/main/scala/org/apache/spark/examples). We shall be using SparkPageRank.scala from the example set in this tutorial
+The [Apache Spark Examples](http://spark.apache.org/examples.html) give a quick overview of the Spark API. They are a hidden treasure for someone seeking to learn about Apache Spark and its various components. You can download the whole set of examples from [Spark’s Github Repository](https://github.com/apache/spark/tree/master/examples/src/main/scala/org/apache/spark/examples). We shall be using SparkPageRank.scala from the example set in this tutorial.
 
 Lately, I have started building some of these sample mini applications in order to understand Spark’s capabilities and API even better. Although the Spark Shell approach works, I decided to try using the community edition of [Scala IDE for Eclipse](http://scala-ide.org/download/sdk.html) release version 4.5. to build the examples directly without using Maven. The 64 bit package includes (Eclipse Neon 4.6.1, Scala IDE 4.5.0, and Scala 2.11.8 & Scala 2.10.6). Installation is straight forward but one thing to keep in mind that when you unzip the Eclipse downloaded eclipse file you only need to create a shortcut to “eclipse.exe” to run the IDE. Scala 2.11 require JDK 8. 
 
@@ -82,6 +82,7 @@ Once the project compiles without errors you are ready to generate the page-rank
  5- Create the directory & subdirectory ~/testing/jars on the local Linux system which is running the sandbox.
  
  6- Copy the page-rank.jar file from HDFS to your local Linux directory using the command:
+ 
       $ hdfs dfs -get /jars/page-rank.jar ~/testing/jars 
  
  
@@ -91,12 +92,13 @@ Once the project compiles without errors you are ready to generate the page-rank
  
  1- Change to the directory where all Spark files are located on Hortonworks Sandbox by typing the following:
  
-      cd /usr/hdp/current/spark2-client
+      $ cd /usr/hdp/current/spark2-client
  
  2- To run the SparkPageRank Scala program execute the following two commands:
  
-     export SPARK_MAJOR_VERSION=2
-     ./bin/spark-submit --class com.scalaproj.SparkPageRank --master yarn --num-executors 1 --driver-memory 512m --executor-memory 512m --executor-cores 1 ~/testing/jars/page-rank.jar /input/urldata.txt 20  
+      $ export SPARK_MAJOR_VERSION=2
+      
+      $ ./bin/spark-submit --class com.scalaproj.SparkPageRank --master yarn --num-executors 1 --driver-memory 512m --executor-memory 512m --executor-cores 1 ~/testing/jars/page-rank.jar /input/urldata.txt 20  
  
   The above command basically calls the main function of the SparkPageRank Object found in the page-rank.jar and passes the urldata.txt file name as a parameter along with request to run 20 iterations. The other commands are Spark related parameters.
  
@@ -111,4 +113,4 @@ The above results indicate that url_1 has the highest ranking because all other 
 
 #### Conclusion
 
-Using this procedure you can create projects for any of the examples in the Spark Example Samples using Eclipse and Hortonworks. As a result you can experiment and learning the inner details of a Spark application and beauty of writing code in Scala and run them on Spark.
+Using this procedure you can create projects for any of the Spark Example samples using Eclipse and run them on Hortonworks Sandbox. As a result you can experiment and learning the inner details of a Spark application and beauty of writing code in Scala and run them on Spark.
