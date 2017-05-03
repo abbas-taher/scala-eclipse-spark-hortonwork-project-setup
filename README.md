@@ -93,8 +93,9 @@ Once the project compiles without errors you are ready to generate the page-rank
  
       cd /usr/hdp/current/spark2-client
  
- 2- To run the SparkPageRank Scala program execute the following command:
+ 2- To run the SparkPageRank Scala program execute the following two commands:
  
+     export SPARK_MAJOR_VERSION=2
      ./bin/spark-submit --class com.scalaproj.SparkPageRank --master yarn --num-executors 1 --driver-memory 512m --executor-memory 512m --executor-cores 1 ~/testing/jars/page-rank.jar /input/urldata.txt 20  
  
   The above command basically calls the main function of the SparkPageRank Object found in the page-rank.jar and passes the urldata.txt file name as a parameter along with request to run 20 iterations. The other commands are Spark related parameters.
