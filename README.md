@@ -3,9 +3,9 @@
 
 The [Apache Spark Examples](http://spark.apache.org/examples.html) give a quick overview of the Spark API. They are a hidden treasure for someone seeking to learn about Apache Spark and its various components. You can download the whole set of examples from [Spark’s Github Repository](https://github.com/apache/spark/tree/master/examples/src/main/scala/org/apache/spark/examples). We shall be using SparkPageRank.scala from the example set in this tutorial.
 
-Lately, I have started building some of these sample mini applications in order to understand Spark’s capabilities and API even better. Although the Spark Shell approach works, I decided to try using the community edition of [Scala IDE for Eclipse](http://scala-ide.org/download/sdk.html) release version 4.5. to build the examples directly without using Maven. The 64 bit package includes (Eclipse Neon 4.6.1, Scala IDE 4.5.0, and Scala 2.11.8 & Scala 2.10.6). Installation is straight forward but one thing to keep in mind that when you unzip the Eclipse downloaded eclipse file you only need to create a shortcut to “eclipse.exe” to run the IDE. Scala 2.11 require JDK 8. 
+Lately, I have started building some of these sample programs in order to understand Spark’s capabilities and API even better. Although the Spark Shell approach works, I decided to try using the community edition of [Scala IDE for Eclipse](http://scala-ide.org/download/sdk.html) release version 4.5. to build the examples directly without using Maven. The 64 bit package includes (Eclipse Neon 4.6.1, Scala IDE 4.5.0, and Scala 2.11.8 & Scala 2.10.6). Installation is straight forward but one thing to keep in mind that when you unzip the Eclipse downloaded eclipse file you only need to create a shortcut to “eclipse.exe” to run the IDE. Scala 2.11 require JDK 8. 
 
-For Hadoop & Spark I downloaded the 64 bits [Hortonworks Sandbox v2.5](https://hortonworks.com/downloads/?_bt=104841503598&_bk=hortonworks%20sandbox&_bm=e&_bn=g&gclid=CNH105LOu9MCFcK4wAodSZMFxw#) running on VirtualBox. Installation of the sandbox was straight forward on my Windows 7 laptop running Dell E6540 with Intel i&4810 Quad CPU 2.8 GHz and 16 GB RAM. One thing to keep in mind is to configure the sandbox to run with 11.5 GB Memory and 3 processors. The remaining one CPU and 4.5 GB memory would be enough to run your IDE and browser if you are not running anything else. To conncet to the sandbox via SSH I am using Putty.
+For Hadoop & Spark I downloaded the 64 bits [Hortonworks Sandbox v2.5](https://hortonworks.com/downloads/?_bt=104841503598&_bk=hortonworks%20sandbox&_bm=e&_bn=g&gclid=CNH105LOu9MCFcK4wAodSZMFxw#) running on VirtualBox. Installation of the sandbox was straight forward on my Windows 7 laptop running Dell E6540 with Intel i7-4810 Quad CPU 2.8 GHz and 16 GB RAM. One thing to keep in mind is to configure the sandbox to run with 11.5 GB Memory and 3 processors. The remaining one CPU and 4.5 GB memory would be enough to run your IDE and browser if you are not running anything else. To conncet to the sandbox via SSH I am using Putty.
 
 ## Contents:
 - Download Apache Spark & Sample Examples
@@ -43,7 +43,7 @@ Now you are ready to setup your libraries and compile/build your project:
 
 1- Select the page-rank Project and then go to main menu: Project-> Properties and you will get to the Properties Window for the page-rank.
 
-2- Delete the "Scala Library Container [2.11.8] which is shown in the diagram below.
+2- Delete the "Scala Library Container [2.11.8] which is shown in the diagram below. This libary already comes within Spark Jars and if you do not remove it you will get a build error.
 
 ![Setup Libraries Path](/images/img-2.jpg?raw=true "Setup Libraries Path")
 
@@ -113,4 +113,4 @@ The above results indicate that url_1 has the highest ranking because all other 
 
 #### Conclusion
 
-Using this procedure you can create projects for any of the Spark Example samples using Eclipse and run them on Hortonworks Sandbox. As a result you can experiment and learning the inner details of a Spark application and beauty of writing code in Scala and run them on Spark.
+Using this procedure you can create projects for any of the Spark Example samples using Eclipse and run them on Hortonworks Sandbox. As a result you can experiment and learning the inner details of a Spark program and the beauty of writing code in Scala and run them on Spark.
