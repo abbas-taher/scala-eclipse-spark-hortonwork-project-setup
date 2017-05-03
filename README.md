@@ -35,7 +35,7 @@ We are going to be using the sample SparkPageRank.scala example that comes with 
  
  6- Delete the line "package org.apache.spark.examples" because you already created your own package com.scalaproj.
 
-<img src="/images/img-1.jpg" width="603" height="474">
+<img src="/images/img-1.jpg" width="602" height="506">
 
 ## Set Libraries Paths & Generate Jar
 
