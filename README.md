@@ -93,11 +93,13 @@ Once the project compiles without errors you are ready to generate the page-rank
       cd /usr/hdp/current/spark2-client
  
  2- To run the SparkPageRank program execute the following command:
-  ./bin/spark-submit --class com.scalaproj.SparkPageRank --master yarn --num-executors 1 --driver-memory 512m --executor-memory 512m --executor-cores 1 ~/testing/jars/page-rank.jar /input/urldata.txt 20
+   
+   ./bin/spark-submit --class com.scalaproj.SparkPageRank --master yarn --num-executors 1 --driver-memory 512m --executor-memory 512m --executor-cores 1 ~/testing/jars/page-rank.jar /input/urldata.txt 20
  
- The above command basically calls the main function of the SparkPageRank Object found in the page-rank.jar and passes the urldata.txt file name as a parameter along command to run 20 iterations. 
+  The above command basically calls the main function of the SparkPageRank Object found in the page-rank.jar and passes the urldata.txt file name as a parameter along command to run 20 iterations. 
  
  3- You can check the results printed on the command terminal:
+ 
      url_4 has rank: 1.3705281840649928.
      url_2 has rank: 0.4613200524321036.
      url_3 has rank: 0.7323900229505396.
