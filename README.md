@@ -110,4 +110,4 @@ The above results indicate that url_1 has the highest ranking because all other 
 
 #### Conclusion
 
-Using this procedure you can create projects for any of the examples in the Spark Example Samples using Eclipse and Hortonworks. As a result you can experiment and learning the inner details of a Spark application and beauty of writing code in Scala. 
+Using this procedure you can create projects for any of the examples in the Spark Example Samples using Eclipse and Hortonworks. As a result you can experiment and learning the inner details of a Spark application and beauty of writing code in Scala and run them on Spark.
