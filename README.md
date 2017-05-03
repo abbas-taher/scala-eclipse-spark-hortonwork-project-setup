@@ -89,11 +89,11 @@ Once the project compiles without errors you are ready to generate the page-rank
  
  Now you are ready to run the application using your Puttly terminal connection.
  
- 1- Change to the directory where all Spark files are located on Hortonworks Sandbox by typing the following
+ 1- Change to the directory where all Spark files are located on Hortonworks Sandbox by typing the following:
  
       cd /usr/hdp/current/spark2-client
  
- 2- To run the SparkPageRank program execute the following command:
+ 2- To run the SparkPageRank Scala program execute the following command:
  
      ./bin/spark-submit --class com.scalaproj.SparkPageRank --master yarn --num-executors 1 --driver-memory 512m --executor-memory 512m --executor-cores 1 ~/testing/jars/page-rank.jar /input/urldata.txt 20  
  
