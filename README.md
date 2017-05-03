@@ -12,7 +12,7 @@ For Hadoop & Spark I downloaded the 64 bits [Hortonworks Sandbox v2.5](https://h
 - Create a New Project in Eclipse IDE for Scala
 - Set Libraries Paths & Generate Jar
 - Copy Jar & Input data to sandbox
-- Run SparkPageRank Scala application & examin the results
+- Run SparkPageRank.scala program & examin the results
 
 ## Download Apache Spark and Sample Examples
 
