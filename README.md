@@ -69,7 +69,7 @@ Once the project compiles without errors you are ready to generate the page-rank
  
  ## Copy Jar & Input data files to sandbox
  
- 1- Login to Ambari (uisng raj_ops as user name and password) and then the small icon with squares to the right near the login name. When the drop down menu opens select Files View which will take you to the root HDFS directory.
+ 1- Login to Ambari (using raj_ops as both user name and password) and then the small icon with squares to the right near the login name. When the drop down menu opens select Files View which will take you to the root HDFS directory.
  
  2- Create the two directories "jars" and "input" in the root hdfs directory.
  
@@ -89,11 +89,18 @@ Once the project compiles without errors you are ready to generate the page-rank
  
  Now you are ready to run the application using your Puttly terminal connection.
  
- 1- Change to the directory where all Spark files are located on Hortonwork Sandbox
- cd /etc/current/Spark2-client
+ 1- Change to the directory where all Spark files are located on Hortonworks Sandbox by typing the following
+      cd /usr/hdp/current/spark2-client
  
- 2- Run the following command
+ 2- To run the SparkPageRank program execute the following command:
+  ./bin/spark-submit --class com.scalaproj.SparkPageRank --master yarn --num-executors 1 --driver-memory 512m --executor-memory 512m --executor-cores 1 ~/testing/jars/page-rank.jar /input/urldata.txt 20
  
- 3- You can check the results 
+ The above command basically calls the main function of the SparkPageRank Object found in the page-rank.jar and passes the urldata.txt file name as a parameter along command to run 20 iterations. 
+ 
+ 3- You can check the results printed on the command terminal:
+     url_4 has rank: 1.3705281840649928.
+     url_2 has rank: 0.4613200524321036.
+     url_3 has rank: 0.7323900229505396.
+     url_1 has rank: 1.4357617405523626.
  
  
