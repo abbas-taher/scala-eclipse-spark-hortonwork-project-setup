@@ -31,7 +31,7 @@ We are going to be using the sample SparkPageRank.scala example that comes with 
  
  4- Delete the empty Object class that was created by the IDE.
  
- 5- From the Spark Examples copy and paste the whole content of [SparkPageRank.scala](/SparkPageRank.scala?raw=true "SparkPageRank") code into your newly created Object. The Scala file is provided in this repository for easy access.
+ 5- From the Spark Examples copy and paste the whole content of [SparkPageRank.scala](/SparkPageRank.scala?raw=true "SparkPageRank") code into your newly created Object. The Scala Example file is provided here for easy access.
  
  6- Delete the line "package org.apache.spark.examples" because you already created your own package com.scalaproj.
 
@@ -106,4 +106,5 @@ Once the project compiles without errors you are ready to generate the page-rank
      url_3 has rank: 0.7323900229505396.
      url_1 has rank: 1.4357617405523626.
  
- 
+ The above results indicate that url_1 has the highest ranking because all other URLs point into its direction. While url_4 is the second highest ranking because url_1 (highest ranking) points into its direction. while the other two urls have lower ranking because
+ they only point to other urls and no one points into them (you can see the graph diagram above to compare with the produced results).
