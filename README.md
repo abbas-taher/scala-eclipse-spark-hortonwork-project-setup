@@ -106,5 +106,8 @@ Once the project compiles without errors you are ready to generate the page-rank
      url_3 has rank: 0.7323900229505396.
      url_1 has rank: 1.4357617405523626.
  
- The above results indicate that url_1 has the highest ranking because all other URLs point into its direction. While url_4 is the second highest ranking because url_1 (highest ranking) points into its direction. while the other two urls have lower ranking because
- they only point to other urls and no one points into them (you can see the graph diagram above to compare with the produced results).
+The above results indicate that url_1 has the highest ranking because all other URLs point into its direction. While url_4 is the second highest ranking because url_1 (highest ranking) points into its direction. while the other two urls have lower ranking because they only point to other urls and no one points into them (you can see the graph diagram above to compare with the produced results).
+
+#### Conclusion
+
+Using this procedure you can create projects for any of the examples in the Spark Example Samples which can save you a lot of time building and experimenting with them as well as learning the inner details of a Spark application. 
